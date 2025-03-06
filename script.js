@@ -8,11 +8,11 @@ let images = [
 ];
 
 let descriptions = [
-    "Description of Image 1",
-    "Description of Image 2",
-    "Description of Image 3",
-    "Description of Image 4",
-    "Description of Image 5"
+    "Resume Project - A structured resume page with professional details.",
+    "Chessboard Layout - Created using HTML & CSS grid.",
+    "Rhombus Generator - A dynamic shape generator using JavaScript.",
+    "Contact Page - A validated contact form with error handling.",
+    "Module 1 Project - My first web development module using HTML. "
 ];
 
 let currentIndex = 0;
