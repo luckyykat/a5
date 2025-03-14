@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="timer">Time: <span id="timeDisplay">4s</span></div>
+    <!-- Timer Display -->
+    <div id="timer">Time: <span id="timeDisplay">4s</span></div>
+
+    <!-- Main Container -->
     <div class="container">
-        <h1> A5 - Carousel </h1>
+        <h1>A5 - Carousel</h1>
         <div class="slideshow-container">
             <div class="image-container">
                 <img id="slideImage" src="https://raw.githubusercontent.com/luckyykat/a5/main/images/Artifact1.png" alt="Image description">
@@ -18,24 +21,25 @@
             <button id="prevBtn">Prev</button>
             <button id="nextBtn">Next</button>
         </div>
-
-        <p> Next slide in: 4 Seconds <span id="timer"> </span> </p>
-
-        <!-- Validation Section -->
-        <footer class="footer">
-            <p>Validated using:</p>
-            <div class="validation-images">
-                <a href="https://validator.w3.org/check/referer">
-                    <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML">
-                </a>
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS">
-                </a>
-            </div>
-        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Next Slide Timer -->
+    <p>Next slide in: <span id="nextSlideTimer">4</span> seconds</p>
 
+    <!-- Validation Section -->
+    <footer class="footer">
+        <p>Validated using:</p>
+        <div class="validation-images">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fluckyykat.github.io%2Fa5%2F">
+                <img src="https://raw.githubusercontent.com/luckyykat/a5/main/images/a4_html_validation.png" alt="Valid HTML">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fluckyykat.github.io%2Fa5%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="https://raw.githubusercontent.com/luckyykat/a5/main/images/a4_css_validation.png" alt="Valid CSS">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
