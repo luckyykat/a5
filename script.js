@@ -12,7 +12,7 @@ let descriptions = [
     "Chessboard Layout - Created using HTML & CSS grid.",
     "Rhombus Generator - A dynamic shape generator using JavaScript.",
     "Contact Page - A validated contact form with error handling.",
-    "Module 1 Project - My first web development module using HTML. "
+    "Module 1 Project - My first web development module using HTML."
 ];
 
 let currentIndex = 0;
@@ -23,18 +23,32 @@ function updateSlide() {
     document.getElementById("description").textContent = descriptions[currentIndex];
 }
 
+// Update Next Slide Timer
+function updateNextSlideTimer() {
+    let countdown = timer;
+    let interval = setInterval(() => {
+        countdown--;
+        document.getElementById("nextSlideTimer").innerText = countdown;
+        if (countdown <= 0) clearInterval(interval);
+    }, 1000);
+}
+
+// Event Listeners for Buttons
 document.getElementById("prevBtn").addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateSlide();
+    updateNextSlideTimer();
 });
 
 document.getElementById("nextBtn").addEventListener("click", function () {
     currentIndex = (currentIndex + 1) % images.length;
     updateSlide();
+    updateNextSlideTimer();
 });
 
 // Auto-change slides every 4 seconds
 setInterval(function () {
     currentIndex = (currentIndex + 1) % images.length;
     updateSlide();
+    updateNextSlideTimer();
 }, timer * 1000);
